@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 
 const Overlay = ({ children, isOpen, onClose, grid }) => {
   return (

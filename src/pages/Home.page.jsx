@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
-import Overlay from "../components/Overlay.component";
 import { getQueried, getTop } from "../helper";
 import { addToList } from "../redux/search/search.actions";
 
