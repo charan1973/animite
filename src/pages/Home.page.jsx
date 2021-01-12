@@ -15,7 +15,7 @@ const Home = ({ search, addToList }) => {
     getTop().then(({ data }) => {
       addToList([]);
       setTopAnime(data.top);
-    });
+    }); // eslint-disable-next-line
   }, []);
 
   const handleSearch = (e) => {
