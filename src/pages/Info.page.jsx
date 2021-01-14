@@ -35,7 +35,7 @@ const Info = ({ search, match }) => {
   return (
     <div className="grid grid-cols-5">
       {search.length > 0 && (
-        <div className="bg-gray-300 hidden lg:block">
+        <div className="bg-gray-300 hidden lg:block h-screen overflow-auto">
           {search
             .filter((anime, idx) => idx < search.length / 2)
             .map((anime, idx) => {
@@ -53,7 +53,7 @@ const Info = ({ search, match }) => {
         </div>
       )}
       {info.title ? (
-        <div className="p-3 col-span-5 lg:col-span-4">
+        <div className="p-3 col-span-5 lg:col-span-4 overflow-auto">
           <div className="flex">
             <img src={info.image_url} alt="" />
             <div className="mx-10 font-bold info-meta">
